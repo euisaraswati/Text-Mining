@@ -31,7 +31,7 @@ View(crawling)
 
 #menyimpan hasil crawling
 write_as_csv(crawling,
-             "crawling_30april.csv",
+             "data sentimen.csv",
              prepend_ids = TRUE,
              na = "",
              fileEncoding = "UTF-8"
