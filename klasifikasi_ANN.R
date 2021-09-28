@@ -6,11 +6,11 @@ setwd("D:/Skripsi")
 
 data <- read.csv("D:/Skripsi/hasil_transformation.csv",
                  stringsAsFactors = FALSE)
-#View(data)
+View(data)
 
 #memisahkan variabel yang digunakan
 data <- data[,1:290]
-#str(data)
+str(data)
 
 #sampel acak
 n <- round(nrow(data)*0.80);n
@@ -64,4 +64,3 @@ table(results)
 
 #confusion matrix
 confusionMatrix(as.factor(prediksi), as.factor(test$label))
-
