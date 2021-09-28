@@ -15,7 +15,7 @@ getwd()
 setwd("D:/Skripsi")
 
 #memanggil data teks yang akan dibersihkan
-data = read_xlsx(path = "dataskripsi.xlsx", sheet = "Sheet1", 
+data = read_xlsx(path = "datasentimen.xlsx", sheet = "Sheet1", 
                           col_names = TRUE )
 View(data)
 
