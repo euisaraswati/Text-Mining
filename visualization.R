@@ -2,11 +2,12 @@ library(tm)
 library(wordcloud)
 library(RColorBrewer)
 
-setwd("D:/Skripsi/Data")
+setwd("D:/Skripsi")
 
 docs <- readLines("sentimen positif.csv")
 docs <- Corpus(VectorSource(docs))
 
+#hapus kata yang kurang berpengaruh
 docs <- tm_map(docs, removeWords, c("covid", "corona", "virus", "ini", "kita",
                                     "itu", "dan", "juga", "aja", "sudah", "lalu",
                                     "ada", "dari", "moga", "lagi", "aku", "yang", "dengan"))
